@@ -1,0 +1,42 @@
+.navBody{
+    background:lightslategray;
+}
+.navUl{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+.navLi{
+  transition: .5s;
+}
+.navLi:hover{
+    
+    transform: scale(1.1);
+}
+.navLi a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: wheat;
+    transition: .4s;
+}
+.navLi a:focus{
+    color: blue;
+}
+.navLi a:hover{
+    color: black;
+    border-bottom: red 3px solid;
+}
+
+@media screen and (max-width: 780px) {
+    .navUl{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navLi{
+        padding: 15px;
+    }
+}
